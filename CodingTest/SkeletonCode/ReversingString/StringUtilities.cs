@@ -10,7 +10,6 @@ namespace SkeletonCode.ReversingString
 
             if (!string.IsNullOrEmpty(input))
             {
-
                 // below is the implementation to improve the performance for the large strings
                 char[] cArray = input.ToCharArray();
                 Array.Reverse(cArray);
