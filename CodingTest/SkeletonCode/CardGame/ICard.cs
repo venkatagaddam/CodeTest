@@ -7,5 +7,12 @@ namespace SkeletonCode.CardGame
 {
 	public interface ICard
 	{
-	}
+        int Value { get; }
+        SuitType Suit { get; }
+    }
+
+    public enum SuitType
+    {
+        Clubs, Spades, Hearts, Diamonds
+    }
 }

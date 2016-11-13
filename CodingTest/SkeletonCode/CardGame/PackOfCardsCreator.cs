@@ -10,7 +10,8 @@ namespace SkeletonCode.CardGame
 	{
 		public IPackOfCards Create()
 		{
-			throw new NotImplementedException();
+            IPackOfCards packOfCards = new PackOfCards();
+            return packOfCards;
 		}
 	}
 }

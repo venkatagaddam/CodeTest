@@ -10,5 +10,5 @@ namespace SkeletonCode.CardGame
 	{
 		void Shuffle ();
 		ICard TakeCardFromTopOfPack ();
-	}
+    }
 }
