@@ -3,15 +3,23 @@
 	public class StringUtilities
 	{
 		public string Reverse(string input)
-		{
-			string output = string.Empty;
+        {
+            string output = string.Empty;
 
-			for(int i = input.Length - 1; i >= 0; i--)
-			{
-				output += input[i];
-			}
+            if (!string.IsNullOrEmpty(input))
+            {
 
-			return output;
-		}
-	}
+                // below is the implementation to improve the performance for the large strings
+                char[] cArray = input.ToCharArray();
+                Array.Reverse(cArray);
+                output = new string(cArray);
+
+                // Instead of using Array method, Linq can also be used as mentioned below. 
+                // In this case, we need to add using directive to System.Linq namespace (i.e., using System.Linq)
+                // output = new string(Enumerable.Range(1, input.Length).Select(i => input[input.Length - i]).ToArray());
+            }
+
+            return output;
+        }
+    }
 }
