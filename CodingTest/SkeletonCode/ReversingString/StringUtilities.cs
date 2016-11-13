@@ -1,4 +1,6 @@
-﻿namespace SkeletonCode.ReversingString
+﻿using System;
+
+namespace SkeletonCode.ReversingString
 {
 	public class StringUtilities
 	{
